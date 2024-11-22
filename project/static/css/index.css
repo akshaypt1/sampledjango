@@ -1,3 +1,210 @@
-body{
-    color: red;
+.main{
+    width: 1200px;
+    height: 600px;
+    background-color: white;
+}
+.side{
+    
+    width: 200px;
+    height: 40px;
+    
+}
+.child2{
+    display: flex;
+}
+p{
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+.child3{
+    position: relative;
+    right: 10px;
+    bottom: 15px;
+}
+.child31{
+    position: relative;
+    bottom:50px ;
+    left: 47px;
+}
+.child4{
+    position: relative;
+    bottom: 65px;
+    left: 6px;
+}
+.child41{
+    position: relative;
+    left: 30px;
+    bottom: 40px;
+}
+.child5{
+    position: relative;
+    bottom: 70px;
+    left: 6px;
+}
+.child51{
+    position: relative;
+    left: 30px;
+    bottom: 40px;
+}
+.child6{
+    position: relative;
+    left: 6px;
+    bottom: 105px;
+}
+.child61{
+    position: relative;
+    left:30px ;
+    bottom: 40px;
+}
+.child7{
+    position: relative;
+    bottom:60px ;
+    left: 5px;
+}
+h4{
+    position: relative;
+    bottom: 130px;
+    left:5px ;
+    font-weight: ;
+}
+.child8{
+    position: relative;
+    left: 6px;
+    bottom: 130px;
+
+}
+.child81{
+    position: relative;
+    left:30px ;
+    bottom: 40px;
+}
+.child9{
+    position: relative;
+    left: 6px;
+    bottom: 170px;
+}
+.child91{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+.child10{
+    position: relative;
+    left: 6px;
+    bottom: 210px;
+}
+.child101{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+.child11{
+    position: relative;
+    left: 7px;
+    bottom: 250px;
+}
+.child111{
+    position: relative;
+    bottom: 42px;
+    left: 30px;
+}
+.child12{
+    position: relative;
+    left: 7px;
+    bottom: 290px;
+}
+.child121{
+    position: relative;
+    bottom: 42px;
+    left: 35px;
+}
+.child13{
+    position: relative;
+    left: 7px;
+    bottom: 330px;
+}
+.child131{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+.child14{
+    position: relative;
+    left: 9px;
+    bottom: 372px;
+}
+.child141{
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+}
+.nav{
+    width: 1200px;
+    display: flex;
+    position: relative;
+    left: 200px;
+    bottom: 40px;
+    height: 40px;
+}
+.nav1{
+    justify-content: center;
+    padding-left: 200px;
+    position: relative;
+    left:200px ;
+    padding-top: 10px;
+    width: 800px;
+    border-radius:600px;
+
+}
+.nav2{
+    position: relative;
+    left: 180px;
+    bottom:22px ;
+}
+.nav4{
+    position: relative;
+    top: 8px;
+    left: 50px;
+    
+}
+.nav3{
+    position: relative;
+    left: 50px;
+    top: 5px;
+}
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+}
+
+.grid-item img {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+} */
+.grid{
+    height: 300px;
+    width: 1150px;
+    background-color: red;
+    
 }

@@ -1,16 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basic HTML5 Page</title>
+    <title>Document</title>
+    {% load static %}
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 
 </head>
 <body>
-    <h1>hai wlcome</h1>
+    <div class="main">
+        <div class="side">
+            <div class="child1"><img src="{% static 'images/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="30px"><img src="{% static 'imagesy1.png'%}"></div><br>
+            <div class="child2"><img src="{% static 'images/home_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="31px"><p>Home</p></div>
+            <div class="child3"><img src="{% static 'images/y2.png'%}" height="40pxpx"><p class="child31">Shorts</p></div>
+            <div class="child4"><img src="{% static 'images/subscriptions_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="25px"><p class="child41">Subscriptions</p></div>
+            <div class="child5"><img src="{% static 'images/video_library_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="25px"><p class="child51">You</p></div>
+            <div class="child6"><img src="{% static 'images/history.png'%}" height="25px"><p class="child61">History</p></div>
+            <div class="child7"><p class="child7">Sign in to like videos,<br> comment, and subscribe.</p></div><br>
+            <h4>Explore</h4>
+            <div class="child8"><img src="{% static 'images/local_fire_department_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="25px"><p class="child81">Trending</p></div>
+            <div class="child9"><img src="{% static 'images/shopping_bag_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="25px"><p class="child91">Shopping</p></div>
+            <div class="child10"><img src="{% static 'images/music_note_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="25px"><p class="child101">Music</p></div>
+            <div class="child11"><img src="{% static 'images/movie_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="25px"><p class="child111">Movies</p></div>
+            <div class="child12"><img src="{% static 'images/sensors_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="25px"><p class="child121">Live</p></div>
+        </div>
+        <div class="nav">
+            <div class="nav1"><input type="search" placeholder="search">
+            <div class="nav2"><img src="{% static 'images/mic_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="25px"></div>
+            </div>
+            <div class="nav3"><img src="{% static 'images/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png'%}" height="30px"></div>
+            <div class="nav4"><button>Sign in</button>
+        </div>
+        <div class="scnav">
+            
+        </div>
+        </div>
+    <div class="grid">
+        <div class="grid1">
+            <div class="grid-item"><a href="https://youtu.be/InGnxypZY7s?si=RI_RgfHAbsb5prBj"><img src="{% static 'images/g2.png'%}" alt="Thumbnail 1"></a></div>
+            <div class="grid-item"><a href="https://youtu.be/AY3Yea6hBbI?si=tiWLL904ZuQlezWH"><img src="{% static 'images/g8.png'%}" alt="Thumbnail 2"></a></div>
+            <div class="grid-item"><a href="https://youtu.be/Tr2MvMBLU8A?si=2DyEq9KdLyC5VKom"><img src="{% static 'images/g9.png'%}" alt="Thumbnail 3"></a></div>
+            <div class="grid-item"><a href="https://youtu.be/e1BHIY9p2WU?si=eLY-3G8Q-wz7KrWO"><img src="{% static 'images/g4.png'%}" alt="Thumbnail 4"></a></div>
+            <div class="grid-item"><a href="https://youtu.be/tQ_VDT2eNWk?si=iULrDlV7-__pxO2Q"><img src="{% static 'images/g7.png'%}" alt="Thumbnail 5"></a></div>
+            <div class="grid-item"><a href="https://youtu.be/AUMpaYtV19M?si=bcRkDLWXHFz1JkIU"><img src="{% static 'images/g6.png'%}" alt="Thumbnail 6"></a></div>
+        </div>
+    </div>
 </body>
 </html>
