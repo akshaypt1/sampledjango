@@ -11,15 +11,16 @@
     <form action="../" method="POST">
         {% csrf_token %}
         <input type="text" name="name" placeholder="name" id="">
-        <p></p>
+        <br>
         <input type="text" name="email" placeholder="email" id="">
-        <p></p>
+        <br>
         <input type="text" name="username" placeholder="username" id="">
-        <p></p>
+        <br>
         <input type="password" name="password" placeholder="password" id="">
-        <p></p>
+        <br>
         <button type="submit">register</button>
-        <a href="login">login</a>
+        <a href="login">login</a><br>
+        <a href="admlogin">login as admin</a>
         </form>
 
         

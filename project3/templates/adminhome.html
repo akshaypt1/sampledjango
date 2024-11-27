@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body>
-    <h1>welcome</h1>
+
+    <h1>welcome admin</h1>
+    {% for i in users %}
+       {% for j in i %}
+       {{j}}
+    {% endfor %}
+    {% endfor %}
     
 </body>
 </html>
