@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin1.css' %}">
+    <style>
+        .main{
+            display: flex;
+            gap: 100px;
+
+        }
+
+    </style>
 </head>
 <body>
 
@@ -15,6 +23,23 @@
        {{j}}
     {% endfor %}
     {% endfor %}
+    <div class="main">
+        <div class="first">
+            <div class="p1">username :</div>
+            <div class="p2">useremail :</div>
+            <div class="p3">password :</div>
+        </div>
+        <div class="second">
+            <div class="p4">username :</div>
+            <div class="p5">useremail :</div>
+            <div class="p7">password :</div>
+        </div>
+        <div class="last">
+            <div class="p8">username :</div>
+            <div class="p9">useremail :</div>
+            <div class="p10">password :</div>
+        </div>
+    </div>
     
 </body>
 </html>
