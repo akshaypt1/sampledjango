@@ -10,7 +10,8 @@ def index(request):
         email=request.POST['email']
         username=request.POST['username']
         password=request.POST['password']
-        user.append([name,email,username,password])
+        d={}
+        user.append({'name':name,'email':email,'username':username,'password':password})
         print(user)
     return render(request,'index.html')
 def index2(request):
@@ -18,9 +19,9 @@ def index2(request):
         username=request.POST['usname']
         password=request.POST['psword']
         for i in user:
-            if username==i[2] and password==i[3]:
-                print([i[0]])
-                return redirect(home)
+            if username==i['username'] and password==i['password']:
+                print([i['name']])
+            return redirect(home)
     return render(request,'index2.html')
 def home(request):
     return render(request,'home.html')
