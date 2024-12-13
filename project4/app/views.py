@@ -5,14 +5,14 @@ from .models import *
 # Create your views here.
 def userlogin(request):
     if request.method=='POST':
-        email=request.POST['email']
+        username=request.POST['username']
         password=request.POST['password']
         # data=user.objects.all()
         # for i in data:
-        #     if i.email==email and i.password==password:
+        #     if i.username==username and i.password==password:
         #         print('loggedin')
         #         request.session['userlog']=i.email
-        user=auth.authenticate(email=email,password=password)
+        user=auth.authenticate(username=username,password=password)
         if user is not None:
             auth.login(request,user)
             return redirect(userhome)
