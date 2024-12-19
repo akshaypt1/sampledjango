@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <h1>user home</h1>
+    <a href="../userlogout">logout</a>
+    <form action="../userhome" method="POST">
+        {% csrf_token %}
+        <table>
+
+            <tr>
+                <td>
+                    <select name="d" id="" class="form-control mt-1">
+
+                        <option selected disabled>select your department</option>
+                            {% for i in deps %}
+                            <option value="{{i.pk}}">{{i.dnmae}}</option>
+                            {% endfor %}                        
+                    </select>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+    {% for in emps%}
+    <div>
+        {{i.name}}
+        {{i.email}}
+    </div>
+    {% endfor %}
+
+</body>
+
+</html>
